@@ -1,0 +1,24 @@
+{
+  "name": "johan",
+  "displayName": "SnipX",
+  "description": "Extension de snippts para componentes HTML diversos con sus estilos , y para CSS en cuanto animaciones y atajos de estilos.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css-snippets.code-snippets"
+      }
+    ]
+  }
+}
