@@ -1,65 +1,151 @@
-# johan README
+# SnipX - Snippets de Componentes HTML y CSS
 
-This is the README for your extension "johan". After writing up a brief description, we recommend including the following sections.
+Una extensión de **Visual Studio Code** que proporciona snippets listos para usar de componentes HTML y animaciones CSS avanzadas. Ahorra tiempo generando código de calidad con un simple prefijo.
 
-## Features
+## 🎯 Características
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Snippets HTML
 
-For example if there is an image subfolder under your extension project workspace:
+- **Navbar Responsiva** - Barra de navegación con menú móvil integrado
+- **Formularios Estilizados** - Inputs, textareas y botones con estilos modernos
+- **Tarjetas de Contenido** - Cards responsive con soporte para imágenes y contenido dinámico
+- **Grillas de Galería** - Layouts optimizados para galerías de imágenes
+- **Modales Accesibles** - Diálogos modal con overlay y cierre interactivo
 
-\!\[feature X\]\(images/feature-x.png\)
+### Snippets CSS
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **Botón con Efecto Líquido** (prefix: `btn-li`) - Animación suave al hover con gradientes
+- **Máquina de Escribir** (prefix: `typewriter`) - Efecto de escritura progresiva con cursor parpadeante
+- **Botón Neón** (prefix: `btn-neon`) - Efecto neon multicolor con pulso infinito
+- **Botón de Carga** (prefix: `btn-loa`) - Spinner animado con transformación circular
+- **Tarjeta Flip 3D** (prefix: `card-3d`) - Volteo 3D con contenido frontal y trasero
+- **Tarjeta Tilt 3D** (prefix: `3d-animation`) - Rotación 3D basada en la posición del cursor
+- **Iconos Magnéticos** (prefix: `icons`) - Efecto magnético con atracción hacia el cursor
 
-## Requirements
+## 📋 Requisitos
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **VS Code 1.107.0** o superior
+- Navegador moderno que soporte CSS Grid, Flexbox y transforms 3D
 
-## Extension Settings
+No se requieren dependencias externas. SnipX funciona completamente como una extensión nativa de VS Code.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## 🔧 Instalación
 
-For example:
+1. Abre VS Code
+2. Ve a la sección de **Extensiones** (`Ctrl+Shift+X` o `Cmd+Shift+X`)
+3. Busca "SnipX"
+4. Haz clic en **Instalar**
 
-This extension contributes the following settings:
+O instálalo desde la línea de comandos:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+```bash
+code --install-extension johan.SnipX
+```
 
-## Known Issues
+## ⚙️ Configuración de la Extensión
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Actualmente, SnipX no requiere configuración adicional. Los snippets se activan automáticamente para archivos `.html` y `.css`.
 
-## Release Notes
+### Próximas mejoras de configuración (roadmap):
 
-Users appreciate release notes as you update your extension.
+- `snippx.enableHTMLSnippets`: Activar/desactivar snippets de HTML
+- `snippx.enableCSSSnippets`: Activar/desactivar snippets de CSS
+- `snippx.cssFramework`: Seleccionar entre Tailwind, Bootstrap o CSS puro
+- `snippx.theme`: Tema de colores predefinido (dark, light, neon, minimal)
 
-### 1.0.0
+## 🚀 Uso
 
-Initial release of ...
+### Activar un snippet
 
-### 1.0.1
+1. Abre un archivo `.html` o `.css`
+2. Escribe el prefix del snippet que deseas (ej: `btn-li`)
+3. Presiona `Tab` o `Enter` para insertar el código
 
-Fixed issue #.
+**Ejemplo:**
 
-### 1.1.0
+```
+Escribe: btn-neon
+Resultado: Se inserta el código CSS del botón neón completo
+```
 
-Added features X, Y, and Z.
+### Personalización
+
+Todos los snippets están diseñados para ser editados fácilmente. Después de insertarlos, puedes:
+
+- Cambiar colores y gradientes
+- Ajustar duraciones de animaciones
+- Modificar tamaños y espacios
+- Adaptar clases CSS a tu proyecto
+
+## 🎨 Ejemplos de Uso
+
+### Botón Neón
+
+```css
+/* Después de insertar 'btn-neon' */
+button {
+  /* Cambiar colores según tu diseño */
+  background: #111; /* tu color base */
+  box-shadow: 0 0 10px #ff0080; /* tu color neón */
+}
+```
+
+### Tarjeta Flip 3D
+
+```html
+<!-- El snippet incluye la estructura HTML y CSS lista para usar -->
+<div class="card-flip-container">
+  <div class="card-flip">
+    <div class="card-front"><!-- Tu contenido --></div>
+    <div class="card-back"><!-- Tu contenido --></div>
+  </div>
+</div>
+```
+
+## 📦 Archivos Incluidos
+
+- `snippets/snippets.code-snippets` - Snippets de HTML
+- `snippets/css-snippets.code-snippets` - Snippets de CSS
+- `package.json` - Configuración de la extensión
+- `README.md` - Este archivo
+
+## 🐛 Problemas Conocidos
+
+- Los efectos 3D pueden tener un rendimiento limitado en navegadores antiguos (IE11 y anteriores)
+- Algunos snippets incluyen código JavaScript comentado para funcionalidades adicionales que requieren su integración manual
+
+## 💡 Sugerencias y Mejoras
+
+¿Tienes ideas para nuevos snippets? [Abre un issue](https://github.com/Johan409IA/SnipX/issues) con tus sugerencias.
+
+## 📝 Notas de Versión
+
+### 0.0.1 (Versión Inicial)
+
+- Lanzamiento inicial de SnipX
+- 7 snippets CSS con efectos visuales avanzados
+- Soporte para HTML y CSS
+- Estructura de proyecto lista para publicación
+
+### Próximas versiones
+
+- [ ] Añadir más snippets de componentes HTML
+- [ ] Integración con frameworks CSS populares
+- [ ] Snippets para formularios avanzados
+- [ ] Temas personalizables
+- [ ] Librería de iconos SVG
+
+## 📄 Licencia
+
+MIT License - Eres libre de usar, modificar y distribuir esta extensión.
+
+## 🙋 Soporte
+
+Para reportar bugs o solicitar características, visita:
+
+- [GitHub Issues](https://github.com/Johan409IA/SnipX/issues)
+- [Email](johan2a409@gmail.com)
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**¡Disfruta creando con SnipX!** 🚀
