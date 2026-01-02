@@ -1,6 +1,6 @@
 {
-  "name": "snipx",
-  "displayName": "SnipX",
+  "name": "snipx-extension",
+  "displayName": "snipx-dev",
   "publisher": "johan-dev",
   "description": "Extensión de snippets para componentes HTML diversos con sus estilos, y para CSS en cuanto animaciones y atajos de estilos.",
   "version": "0.0.1",
@@ -10,6 +10,11 @@
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johan409IA/SnipX"
+  },
+  "license": "MIT",
   "icon": "snipX-logo.png",
   "contributes": {
     "snippets": [
