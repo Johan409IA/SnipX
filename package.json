@@ -1,7 +1,8 @@
 {
-  "name": "johan",
+  "name": "snipx",
   "displayName": "SnipX",
-  "description": "Extension de snippts para componentes HTML diversos con sus estilos , y para CSS en cuanto animaciones y atajos de estilos.",
+  "publisher": "johan-dev",
+  "description": "Extensión de snippets para componentes HTML diversos con sus estilos, y para CSS en cuanto animaciones y atajos de estilos.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.107.0"
@@ -9,6 +10,7 @@
   "categories": [
     "Snippets"
   ],
+  "icon": "snipX-logo.png",
   "contributes": {
     "snippets": [
       {
